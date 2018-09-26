@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="TextViewName">Name:</string>
+    <string name="TextViewClass">Class:</string>
+    <string name="TextViewDescription">Description:</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_prueba">PruebaActivity</string>
+    <string name="title_activity_main3">Main3Activity</string>
+    <string name="title_activity_details">DetailsActivity</string>
+    <string name="TextViewCheck">Check</string>
+    <string name="MenuRandom">Menu Random</string>
+    <string name="ButtonRandom">Selection Random</string>
+    <string name="MenuCharacters">Selection Characters</string>
+    <string name="title_activity_random">RandomActivity</string>
+    <string name="principal">Characters of Heroes</string>
+    <string name="description">Characters</string>
+    <string name="random">Random Characters</string>
+    <string name="title_activity_character">CharacterActivity</string>
+    <string name="characters">Characters</string>
+</resources>
