@@ -42,8 +42,9 @@ public class CharacterActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent (getApplicationContext(), DetailsActivity.class);
                 personaje = "nazeebo";
-                //nombre = "@+id/imageButtonNazeebo";
-                //intent.putExtra("nombre", imageView2.get(position));
+
+                intent.putExtra("nombre", R.drawable.nazeebop);
+
                 startActivity(intent);
             }
         });
@@ -55,6 +56,9 @@ public class CharacterActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent (getApplicationContext(), DetailsActivity.class);
                 personaje = "nova";
+
+                intent.putExtra("nombre", R.drawable.novap);
+
                 startActivity(intent);
             }
         });
@@ -66,6 +70,9 @@ public class CharacterActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent (getApplicationContext(), DetailsActivity.class);
                 personaje = "genji";
+
+                intent.putExtra("nombre", R.drawable.genjip);
+
                 startActivity(intent);
             }
         });
@@ -77,6 +84,9 @@ public class CharacterActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent (getApplicationContext(), DetailsActivity.class);
                 personaje = "sylvanas";
+
+                intent.putExtra("nombre", R.drawable.sylvanasp);
+
                 startActivity(intent);
             }
         });
@@ -88,6 +98,9 @@ public class CharacterActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent (getApplicationContext(), DetailsActivity.class);
                 personaje = "valla";
+
+                intent.putExtra("nombre", R.drawable.vallap);
+
                 startActivity(intent);
 
             }
@@ -100,6 +113,9 @@ public class CharacterActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent (getApplicationContext(), DetailsActivity.class);
                 personaje = "diablo";
+
+                intent.putExtra("nombre", R.drawable.diablop);
+
                 startActivity(intent);
 
             }
@@ -112,6 +128,9 @@ public class CharacterActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent (getApplicationContext(), DetailsActivity.class);
                 personaje = "mefisto";
+
+                intent.putExtra("nombre", R.drawable.mefistop);
+
                 startActivity(intent);
 
             }

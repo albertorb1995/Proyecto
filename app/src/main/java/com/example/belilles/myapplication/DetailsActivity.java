@@ -1,13 +1,8 @@
 package com.example.belilles.myapplication;
 
-import android.media.Image;
-import android.net.Uri;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -23,9 +18,9 @@ import org.json.JSONObject;
 
 public class DetailsActivity extends AppCompatActivity {
 
-    TextView textViewName2;
-    TextView textViewClass2;
-    TextView textViewDescription2;
+    TextView textViewNameCharacter;
+    TextView textViewClassCharacter;
+    TextView textViewDescriptionCharacter;
     ImageView imageView2;
 
     @Override
@@ -39,7 +34,7 @@ public class DetailsActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
 
-        ImageView imageView2 = (ImageView)findViewById(R.id.imageView2);
+        ImageView imageView2 = findViewById(R.id.imageView2);
 
         int idImagen = getIntent().getExtras().getInt("nombre");
         imageView2.setImageDrawable(getDrawable(idImagen));
@@ -53,15 +48,15 @@ public class DetailsActivity extends AppCompatActivity {
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest
 
                 (Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
-                    TextView textViewName2 = (TextView) findViewById(R.id.textViewName2);
-                    TextView textViewClass2 = (TextView) findViewById(R.id.textViewClass2);
-                    TextView textViewDescription2 = (TextView) findViewById(R.id.textViewDescription2);
+                    TextView textViewNameCharacter = (TextView) findViewById(R.id.textViewNameCharacter);
+                    TextView textViewClassCharacter = (TextView) findViewById(R.id.textViewClassCharacter);
+                    TextView textViewDescriptionCharacter = (TextView) findViewById(R.id.textViewDescriptionCharacter);
                     @Override
                     public void onResponse(JSONObject response) {
                         try {
-                            textViewName2.setText(response.getString("name"));
-                            textViewClass2.setText(response.getString("class"));
-                            textViewDescription2.setText(response.getString("description"));
+                            textViewNameCharacter.setText(response.getString("name"));
+                            textViewClassCharacter.setText(response.getString("class"));
+                            textViewDescriptionCharacter.setText(response.getString("description"));
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }
@@ -71,14 +66,12 @@ public class DetailsActivity extends AppCompatActivity {
                     @Override
                     public void onErrorResponse(VolleyError error) {
                         // TODO: Handle error
-                        textViewName2.setText("Error: " + error.toString());
+                        textViewNameCharacter.setText("Error: " + error.toString());
                     }
                 });
 
-
         requestQueue = Volley.newRequestQueue(getApplicationContext());
         requestQueue.add(jsonObjectRequest);
-
 
     }
 
