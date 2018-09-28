@@ -22,13 +22,13 @@
 
     <include layout="@layout/content_random" />
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
+    <!--<android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabRandom"
         android:layout_width="93dp"
         android:layout_height="81dp"
         android:layout_gravity="bottom|end"
         android:layout_margin="@dimen/fab_margin"
         app:backgroundTint="@android:color/holo_purple"
-        app:srcCompat="@drawable/random" />
+        app:srcCompat="@drawable/random" />-->
 
 </android.support.design.widget.CoordinatorLayout>

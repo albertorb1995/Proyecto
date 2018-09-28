@@ -2,12 +2,14 @@ package com.example.belilles.myapplication;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.DrawableRes;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 
 public class CharacterActivity extends AppCompatActivity {
 
@@ -19,8 +21,10 @@ public class CharacterActivity extends AppCompatActivity {
     ImageButton imageButtonValla;
     ImageButton imageButtonDiablo;
     ImageButton imageButtonMefisto;
+    ImageView imageView2;
 
     public static String personaje;
+    public static String nombre;
 
 
     @Override
@@ -32,13 +36,15 @@ public class CharacterActivity extends AppCompatActivity {
 
         //NAZEEBO
         ImageButton imageButtonNazeebo = (ImageButton) findViewById(R.id.imageButtonNazeebo);
+        //ImageView imageView = (ImageView) findViewById(R.id.imageView);
         imageButtonNazeebo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent (getApplicationContext(), DetailsActivity.class);
                 personaje = "nazeebo";
+                //nombre = "@+id/imageButtonNazeebo";
+                //intent.putExtra("nombre", imageView2.get(position));
                 startActivity(intent);
-
             }
         });
 
@@ -53,7 +59,7 @@ public class CharacterActivity extends AppCompatActivity {
             }
         });
 
-        //NOVA
+        //GENJI
         ImageButton imageButtonGenji = (ImageButton) findViewById(R.id.imageButtonGenji);
         imageButtonGenji.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -110,9 +116,6 @@ public class CharacterActivity extends AppCompatActivity {
 
             }
         });
-
-
-
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }

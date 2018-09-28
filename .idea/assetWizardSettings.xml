@@ -18,23 +18,12 @@
                                 <PersistentState>
                                   <option name="children">
                                     <map>
-                                      <entry key="backgroundImage">
-                                        <value>
-                                          <PersistentState>
-                                            <option name="values">
-                                              <map>
-                                                <entry key="scalingPercent" value="74" />
-                                              </map>
-                                            </option>
-                                          </PersistentState>
-                                        </value>
-                                      </entry>
                                       <entry key="foregroundImage">
                                         <value>
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="scalingPercent" value="74" />
+                                                <entry key="scalingPercent" value="52" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -44,9 +33,10 @@
                                   </option>
                                   <option name="values">
                                     <map>
-                                      <entry key="backgroundImage" value="C:\Users\Belilles\Desktop\mefisto.jpg" />
-                                      <entry key="foregroundImage" value="C:\Users\Belilles\Desktop\mefisto.jpg" />
-                                      <entry key="outputName" value="ic_mefisto" />
+                                      <entry key="backgroundAssetType" value="COLOR" />
+                                      <entry key="backgroundColor" value="a61a34" />
+                                      <entry key="foregroundImage" value="C:\Users\Belilles\Desktop\ImagenesAplicacion\random.png" />
+                                      <entry key="outputName" value="ic_bottonrandom" />
                                     </map>
                                   </option>
                                 </PersistentState>
